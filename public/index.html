@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChemWise — Chemistry AI Tutor</title>
+<link rel="stylesheet" href="style.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script defer src="script.js"></script>
+</head>
+<body>
+<header><div class="brand"><span class="flask">⚗</span><div><b>ChemWise</b><small>YOUR AI CHEMISTRY TUTOR</small></div></div><button id="newChat">＋ New chat</button></header>
+<main>
+<section class="panel chat">
+<div class="heading"><div><small>LEARNING SPACE</small><h1>Ask your tutor</h1></div><span>✦</span></div>
+<div class="chat-scroll" id="chatScroll">
+<div class="welcome" id="welcome"><div class="hero">🧪</div><h2>What are we learning today?</h2><p>Ask a chemistry question and get a clear, step-by-step explanation.</p>
+<div class="suggestions">
+<button class="suggestion" data-question="Explain atomic structure.">⚛ <span><b>Atomic structure</b><small>Protons, neutrons and electrons</small></span></button>
+<button class="suggestion" data-question="Explain how to calculate moles with an example.">∑ <span><b>Mole calculations</b><small>Learn how to calculate moles</small></span></button>
+<button class="suggestion" data-question="Balance H2 + O2 → H2O and explain each step.">⚖ <span><b>Balance an equation</b><small>H₂ + O₂ → H₂O</small></span></button>
+</div></div><div id="chatHistory"></div></div>
+<form id="chatForm"><textarea id="userInput" maxlength="4000" rows="2" placeholder="Message ChemWise..." required></textarea><div class="form-bottom"><small>Enter to send · Shift + Enter for new line</small><button id="sendBtn" type="submit">↑</button></div></form>
+<p class="note">AI can make mistakes. Verify important answers with your teacher or textbook.</p>
+</section>
+<aside class="panel solution">
+<div class="heading"><div><small>YOUR WORKSPACE</small><h2>Solution window</h2></div><span class="ready" id="status">● Ready</span></div>
+<div id="solutionContent" class="solution-content"><div class="empty"><div>📘</div><h3>Your explanation appears here</h3><p>Ask a question in the chat. The complete solution will appear here.</p></div></div>
+<p class="note">✦ Learn the method, not just the answer.</p>
+</aside>
+</main>
+</body></html>
